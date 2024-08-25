@@ -1,10 +1,6 @@
 #include "account.h"
 
-account::account(int moneyAmout, std::string Name)
-{
-	money = moneyAmout;
-	accountName = Name;
-}
+account::account(int moneyAmout, std::string Name) : money(moneyAmout) , accountName(Name) {}
 
 void account::moneyTransfer(int moneyAmount, account& recivePerson) {}
 

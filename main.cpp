@@ -14,7 +14,6 @@ int main() {
 	deposit dstDeposit(0, "dstDeposit");
 
 
-
 	for (auto e : accountList)
 		e->moneyPrint();
 
