@@ -2,6 +2,10 @@
 #include <iostream>
 #include <string>
 
+/**
+* @brief accountAbstractClass 
+* @details An account defines attributes that it has in common.
+*/
 class account {
 private:
 	int money;
@@ -14,6 +18,11 @@ public:
 	int getMoney() const;
 	void setMoney(int addMoney);
 };
+
+/**
+* @brief depositClass
+* @details It is a deposit account and is an account class in the form of the most common account.
+*/
 class deposit : public account {
 public:
 	deposit(int moneyAmount,std::string name);
@@ -21,7 +30,10 @@ public:
 	void moneyWitdraw(int moneyAmount) override;
 };
 
-
+/**
+* @brief savingClass
+* @details The saving class has limited functionality compared to regular accounts.
+*/
 class saving : public account {
 public:
 	saving(int moneyAmount, std::string name);
